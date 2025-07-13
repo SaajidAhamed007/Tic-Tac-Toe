@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(25, 35, 54);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: beige;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mark{
+    font-size: 85px;
+    font-weight:bolder;
+    color: beige;
+}
+
+
+
+.container{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.tictactoe-container{
+    box-shadow:2px 2px 8px 0px rgb(143, 143, 236);
+    width: 40%;
+    height:80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgba(44, 44, 174,0.5);
+}
+
+.box{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgba(44, 44, 174,1);
+}
+
+@media (max-width:600px){
+    .tictactoe-container{
+        width: 60%;
+        height:50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: rgba(44, 44, 174,0.5);
+    }
+    .container{
+        display: flex;
+        height: 60vh;
+        align-items:center;
+        justify-content: center;
+    }
+}
