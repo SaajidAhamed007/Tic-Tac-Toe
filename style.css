@@ -63,4 +63,9 @@ body{
         align-items:center;
         justify-content: center;
     }
+    .mark{
+        font-size: 40px;
+        font-weight:bolder;
+        color: beige;
+    }
 }
