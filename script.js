@@ -11,7 +11,6 @@ boxes.forEach((box)=>{
         count++;       
         game[box.getAttribute("data-key")]=player
         if(box.getAttribute("data-value")){
-            alert("already filled")
             count--;
             return;
         }
